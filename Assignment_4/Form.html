@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+	  span{
+		float: right;
+		/* text-align: center; */
+		color: red;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-weight: lighter;
+		width: 450px;
+	  }
+	  table, th, td{
+		border: 2px solid;
+		margin: 0 auto;
+		padding: 2px;
+		text-align: center;
+	  }
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feeback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form novalidate onsubmit="populateTable(event)" method="post">
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="Miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="Mr. " required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="Mrs. " required="required"/>Mrs.
+			
+			<br><br><span class="validation-message" id="titleSpan" >Title Required</span><br><br>
+			<br>
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" required="required" />	
+			<br><br><span class="validation-message" id="firstNameSpan" >First Name Required</span><br><br>
+			<br>
+			
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" required="required" />
+			<br><br><span class="validation-message" id="lastNameSpan" >Last Name Required</span><br><br>
+			<br>
+			
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" required="required" />
+			<br><br><span class="validation-message" id="emailIDSpan" >Email Required</span><br><br>
+			<br>
+			
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required="required" />
+			<br><br><span class="validation-message" id="phoneNumberSpan" >Phone Number Required</span><br><br>
+			<br>
+
+			<label for="streetAddress1">Street Address 1*:</label>
+			<input type="text" name="streetAddress1" id="streetAddress1" placeholder="Address" required="required" />
+			<br><br><span class="validation-message" id="streetAddress1Span" >Address Required</span><br><br>
+			<br>
+
+			<label for="streetAddress2">Street Address 2:</label>
+			<input type="text" name="streetAddress2" id="streetAddress2" placeholder="Address"/>
+			<br><br><br>
+
+			<label for="city">City*:</label>
+			<input type="text" name="city" id="city" placeholder="City"/>
+			<br><br><span class="validation-message" id="citySpan" >City Required</span><br><br>
+			<br>
+			
+			<label for="state">State*:</label>
+			<input type="text" name="state" id="state" placeholder="State"/>
+			<br><br><span class="validation-message" id="stateSpan" >State Required</span><br><br>
+			<br>
+			
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required="required" />
+			<br><br><span class="validation-message" id="zipcodeSpan" >ZipCode Required</span><br><br>
+			<br>
+             
+            <label for="sorce">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" id="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" id="google" /> Google
+            <input type='checkbox' name="source" value="yelp" id="yelp" /> Yelp 
+			<br><br><span class="validation-message" id="sourceSpan" >Source Required</span><br><br>
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your Comments" rows="5" cols="25"></textarea>
+			<br><br><span class="validation-message" id="commentsSpan" >Comments Required</span><br><br>
+			<br><br>
+
+			<label for="rating">Rating*:</label>
+			<select name="rating" id="rating">
+				<option value="">--Select an option---</option>
+				<option value="Excellent">Excellent</option>
+				<option value="Good">Good</option>
+				<option value="Average">Average</option>
+				<option value="Poor">Poor</option>
+			</select>
+			<br><br><span class="validation-message" id="ratingSpan" >Rating Required</span><br><br>
+
+			<label for="review" id="review">Addtional Review:</label>
+			<input type="checkbox" name="review" value="Yes" id="yes">
+			<!-- <input type="checkbox" name="review" value="No" id="no"> -->
+			<br><br>
+
+			<label for="additionalReview"></label>
+			<input type="text" name="additionalReview" id="additionalReview" placeholder="Additional Review" style="float: right; width: 440px;">
+			<br><br>
+			<br><br>
+			<input type="Submit" id="submit">
+			<input type="Reset" onclick="onLoad()">
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+ <br>
+ <h2>Feedback Data: </h2>
+    <div>
+        <table id="myTable">
+            <tr>
+				<th>Name</th>
+				<th>Email ID</th>
+				<th>Phone Number</th>
+				<th>Street Address 1</th>
+				<th>Street Address 2</th>
+				<th>City</th>
+				<th>State</th>
+				<th>ZipCode</th>
+				<th>Comments</th>
+				<th>Rating Selected</th>
+				<th>Additional Comments</th>
+			</tr>
+        </table>
+    </div>
+ <script src="Script.js"></script>
+
+</body>
+</html>
