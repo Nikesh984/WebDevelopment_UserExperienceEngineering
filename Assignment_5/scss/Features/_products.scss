@@ -1,0 +1,59 @@
+$background-color : black;
+$color : white;
+$font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.product_container{
+    display: flex;
+    justify-content: flex-start;
+   
+
+    &_info{
+        background-color: black;
+        display: grid;
+        padding: 3rem;
+
+        h1,h2,p{
+            font-family: $font-family;
+            color: $color;
+            font-weight: 500;
+        }
+    }
+
+}
+
+@mixin prefix($property, $value){
+    #{$property} : $value;
+}
+
+.products, .products_storage{
+    @include prefix(display, grid);
+    @include prefix(padding, 4rem);
+    @include prefix(font-family, $font-family);
+    
+    .product_list_memory{
+        @include prefix(display, grid);
+        @include prefix(grid-template-columns, repeat(2,1fr));
+    }
+    h2{
+        @include prefix(color, purple);
+    }
+    select{
+        @include prefix(color, purple);
+        @include prefix(width, 90%);
+        @include prefix(padding, 0.5rem);
+        @include prefix(border-radius, 5px);
+        @include prefix(font-size, 1rem);
+    }
+    .product_list_memory_items{
+        @include prefix(padding, 1.5rem);
+    }
+ 
+}
+
+.products{
+    @include prefix(background-color, $color);
+}
+
+.products_storage{
+    @include prefix(background-color, #f2f2f2);
+}

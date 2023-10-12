@@ -1,0 +1,59 @@
+$font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.tech_news_container{
+    background-color: #0a0a0a;
+    padding :3rem;
+    color: white;
+
+    .news_items{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+
+
+
+}
+
+.news_item {
+    display: flex;
+   
+    h2{
+        font-size: 1.25rem;
+        font-family: $font-family;
+    }
+
+    h3,h4,p{
+        font-family: $font-family;
+    }
+
+
+    .news_image{
+        width: 340px;
+        height: 340px;
+        padding : 20px;
+    }
+
+    .arrow_forward{
+        width: 100px;
+    }
+
+    .news_image:hover{
+        width: 360px;
+        height: 360px;
+        transition: 1s;
+    }
+
+    .arrow_forward:hover{
+        width: 120px;
+    }
+}
+
+.news_item:hover{
+    border: 1px solid white;
+}
+
+

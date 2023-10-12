@@ -1,0 +1,12 @@
+$linear_gradient : linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
+
+html{
+    width: auto;
+    height: auto;
+
+    body{
+        background-image: $linear_gradient;
+   }
+}
+
+

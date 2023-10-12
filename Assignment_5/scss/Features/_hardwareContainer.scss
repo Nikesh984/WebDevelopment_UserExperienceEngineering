@@ -1,0 +1,36 @@
+$font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.hardware_container{
+    padding: 4rem;
+    background-color: white;
+
+    h1,p,h3{
+        font-family: $font-family;
+    }
+
+}
+
+.hardware_items{
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    padding: 50px;
+
+    .hardware_videos{
+        height:50%;
+    }
+    .hardware_arrow_icon{
+        width: 70px;
+    }
+
+    .hardware_arrow_icon:hover{
+        width: 85px;
+    }
+
+}
+
+.hardware_item{
+    padding: 10px;
+    height: 250px;
+}
