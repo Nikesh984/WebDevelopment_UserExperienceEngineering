@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* background-image: url("/Images/top-view-black-office-stuffs-keyboard-calculator-dark-table-copy-space_140725-144531.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-image: url("Images/photo-1625225233840-695456021cde.avif");
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    background-position: 100%;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: white; */
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, button, label {
+    margin: 5px;
+    display: block;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+h3{
+    text-align: center;
+    /* color: white; */
+}
+
+/* label{
+    color : white
+} */
+#btnSubmit{
+    background-color: green;
+    color: white;
+    width: 100px;
+    float: left;
+    border-radius: 10px;
+    
+}
+
+/* #submit{
+    background-color: grey;
+    border-color: grey;
+    
+} */
+
+.text-danger{
+    color: darkred;
+}
