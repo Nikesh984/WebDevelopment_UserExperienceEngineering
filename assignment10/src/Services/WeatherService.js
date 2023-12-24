@@ -1,4 +1,4 @@
-const API_KEY = 'e9da97334a44c480c68df89cf3624555';
+const API_KEY = ''; //REPLACE WITH YOUR TOKEN
 
 const getWeatherData = async (city) => {
   const api_call = await fetch(
